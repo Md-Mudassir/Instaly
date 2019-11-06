@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "Accepts followers request automatically",
+  "icons": { "128": "icon_128.png" },
   "background": {
     "scripts": ["background.js"],
     "persistent": true
   },
   "browser_action": {
+    "default_icon": "icon.png",
     "default_title": "Instaly!"
   },
   "permissions": ["https://*/*", "http://*/*", "tabs"]
