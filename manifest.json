@@ -9,7 +9,6 @@
     "persistent": true
   },
   "browser_action": {
-    "default_icon": "icon.png",
     "default_title": "Instaly!"
   },
   "permissions": ["https://*/*", "http://*/*", "tabs"]
