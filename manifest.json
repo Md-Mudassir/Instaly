@@ -1,0 +1,14 @@
+{
+  "name": "Instaly",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Accepts followers request automatically",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Instaly!"
+  },
+  "permissions": ["https://*/*", "http://*/*", "tabs"]
+}
