@@ -7,6 +7,7 @@ getElementByXpath = path => {
     null
   ).singleNodeValue;
 };
+
 setTimeout(() => {
   getElementByXpath(
     "//*[@id='react-root']/section/nav/div[2]/div/div/div[3]/div/div[2]/a"
@@ -26,3 +27,5 @@ setTimeout(() => {
     }, 2000);
   }, 3000);
 }, 3000);
+
+
