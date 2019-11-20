@@ -7,7 +7,6 @@ getElementByXpath = path => {
     null
   ).singleNodeValue;
 };
-let i;
 
 setTimeout(() => {
   getElementByXpath(
@@ -19,18 +18,20 @@ setTimeout(() => {
     ).click();
 
     setTimeout(() => {
+      let i = 1;
       try {
-        for (i = 1; i < 100; i++) {
-          // let count = count + i - 1;
+        while (i) {
           getElementByXpath(
             "//*[@id='react-root']/section/nav/div[2]/div/div/div[3]/div/div[2]/div/div/div[4]/div/div/div/div[" +
               i +
-              "]/div[3]/div/div/button"
+              "]/div[3]/div/div/button",
             // arr.push(i)
+            i++
           ).click();
         }
       } catch (err) {
-        console.log(`Accepted requests = ${i - 1}`);
+        console.log(`Accepted requests = ${i - 2}`);
+        // i = undefined;
       }
     }, 3000);
   }, 3000);
